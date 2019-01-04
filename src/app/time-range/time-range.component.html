@@ -1,0 +1,48 @@
+<div class="main">
+  <div class="row">
+    <div class="col-md-5 col-sm-12">
+      <div class="select">
+        <div class="title">Select the loading time range <br> (in Seconds)</div>
+        <div class="dropdown">
+          <span class="button-toggle" id="dropdownMenuButton" (click)='toggle()'>
+            {{selectedValue}}
+            <i class="down"></i>
+          </span>
+          <div *ngIf='show' class="dropdown-menu">
+            <span class="dropdown-item" (click)='selectedItem(item)' *ngFor='let item of timeRange'>{{item.value}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 slider-part">
+      <div class="row">
+        <div class="slidecontainer ">
+          <div class="title">Select a perticuler loading time</div>
+          <input type="range" [(ngModel)]='selectedTime' min="{{minVal}}" max="{{maxVal}}"
+            value="50" class="slider" id="myRange">
+          <div class="row">
+            <span *ngIf='minVal == "0" || minVal' class="min">{{minVal}} s</span>
+            <span *ngIf='selectedTime' class="mean">{{selectedTime}} s</span>
+            <span *ngIf='maxVal' class="max">{{maxVal}} s</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="toggle-button">
+          <label class="switch">
+            <input class='slider-box' [(ngModel)]='applyTime' type="checkbox">
+          </label>
+          <span class="slider-title">Enable the loading time as selected on slider</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="submit-button">
+        <button class='button-submit' (click)='onSubmit()'>Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

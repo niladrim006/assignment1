@@ -1,0 +1,24 @@
+h3{
+    background-color: lightgray;
+    padding-left: 40px;
+    padding-top: 5px;
+    height: 30px;
+}
+
+.congo-page {
+    text-align: center
+}
+.title {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 15px !important;
+}
+.submit-button {
+    width: 30%;
+    border-radius: 5px;
+    height: 50px;
+    margin-top: 10%;
+}
+.congo-page {
+    margin-top: 100px
+}

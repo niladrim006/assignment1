@@ -1,0 +1,222 @@
+.select {
+    /* border-right: 1px solid gray; */
+    padding-left: 30px;
+}
+
+select {
+    height: 40px;
+}
+
+select option {
+    height: 35px;
+}
+
+.slider-part {
+    border-left: 1px solid gray;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 65%;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.dropdown-item {
+    display: block;
+    cursor: pointer;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border-top: 1px solid rgb(217, 218, 211);
+    height: 30px;
+    padding-top: 10px;
+}
+
+.dropdown-item:hover {
+    display: block;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    background-color: aliceblue;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    border-top: 1px solid rgb(217, 218, 211);
+    height: 30px;
+    padding-top: 10px;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    float: right;
+    margin-top: 9px;
+    margin-right: 6px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.button-toggle {
+    width: 60% !important;
+    border: 1px solid black;
+    background-color: aliceblue;
+    display: inline-block;
+    height: 40px;
+    text-align: left;
+    padding-left: 30px;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-right: 3px;
+}
+
+.selector-field {
+    display: inline-block;
+    width: 50% !important;
+    margin-left: 60px !important;
+    text-align: left !important;
+}
+
+.dropdown-field {
+    display: inline-block;
+    text-align: left !important;
+    border-right: 2px solid gray;
+}
+
+.dropdown {
+    border-radius: 4px;
+    outline: none !important;
+    width: 100%;
+}
+
+.title-dropdown {
+    display: inline-block;
+    width: 35%;
+}
+
+.title {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 15px !important;
+}
+
+.slider-title {
+    font-size: 18px;
+    color: gray;
+    margin-left: 20px !important;
+}
+
+.slidecontainer {
+    width: 100%;
+    margin-top: 60px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #EFE7E7;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+.min {
+    position: absolute;
+    left: 100px;
+}
+
+.max {
+    position: absolute;
+    right: 155px;
+}
+
+.mean {
+    position: absolute;
+    left: 405px;
+}
+
+.toggle-button {
+    margin-top: 60px;
+    padding-left: 100px
+}
+
+.submit-button {
+    text-align: center !important;
+    margin-top: 50px;
+}
+
+.button-submit {
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    /* width: 300px; */
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f8f5f5;
+    border-radius: 4px;
+    color: black;
+    border: 1px solid gray;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%
+}
+
+.button-submit:hover {
+    border: none;
+    color: white;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+     padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #ddd;
+    margin-left: auto;
+    border: 1px solid gray;
+    margin-right: auto;
+    border-radius: 4px;
+    color: black;
+}
